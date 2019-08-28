@@ -2,31 +2,41 @@
 
   ```shell
   sudo apt-get update
+  &
+  sudo yum update
   ```
 
-- 安装gcc和g++依赖库
+- 安装gcc和g++
 
   ```shell
   sudo apt-get install build-essential
   sudo apt-get install libtool
+  &
+  sudo yum install gcc-c++
   ```
 
-- 安装pcre依赖库
+- 安装pcre
 
   ```shell
   sudo apt-get install libpcre3 libpcre3-dev
+  &
+  sudo yum install -y pcre pcre-devel
   ```
 
-- 安装zlib依赖库
+- 安装zlib
 
   ```shell
   sudo apt-get install zlib1g-dev
+  &
+  sudo yum install -y zlib zlib-devel
   ```
 
-- 安装SSL依赖库
+- 安装OpenSSL
 
   ```shell
   sudo apt-get install openssl
+  &
+  sudo yum install -y openssl openssl-devel
   ```
 
 - 去 <http://nginx.org/download/> 寻找自己要安装的版本
@@ -85,10 +95,10 @@
   sudo ln -s /usr/local/nginx/sbin/nginx /usr/bin/nginx
   ```
 
-- 设置开机启动
+- **Ubuntu**设置开机启动
 
   ```shell
-  sudo vim /etc/init.d/nginx
+  sudo vi /etc/init.d/nginx
   ```
 
   加入以下内容
@@ -291,6 +301,40 @@
           ;;
   esac
   ```
+
+- **Centos**设置开机启动
+
+  ```shell
+  vi /etc/rc.local
+  ```
+
+  最下面加入以下内容
+
+  ```shell
+  /usr/local/nginx/sbin/nginx
+  ```
+
+  rc.local 文件总览如下:
+
+  ```shell
+  #!/bin/bash
+  # THIS FILE IS ADDED FOR COMPATIBILITY PURPOSES
+  #
+  # It is highly advisable to create own systemd services or udev rules
+  # to run scripts during boot instead of using this file.
+  #
+  # In contrast to previous versions due to parallel execution during boot
+  # this script will NOT be run after all other services.
+  #
+  # Please note that you must run 'chmod +x /etc/rc.d/rc.local' to ensure
+  # that this script will be executed during boot.
+  
+  touch /var/lock/subsys/local
+  /usr/local/nginx/sbin/nginx
+  
+  ```
+
+  
 
 - 设置服务脚本有执行权限
 
