@@ -1,3 +1,5 @@
+## 安装 ( Ubuntu & Centos )
+
 - 更新
 
   ```shell
@@ -95,7 +97,43 @@
   sudo ln -s /usr/local/nginx/sbin/nginx /usr/bin/nginx
   ```
 
-- **Ubuntu**设置开机启动
+## 设置开机启动 
+
+### Centos设置开机启动
+
+```shell
+vi /etc/rc.local
+```
+
+最下面加入以下内容
+
+```shell
+/usr/local/nginx/sbin/nginx
+```
+
+rc.local 文件总览如下:
+
+```shell
+#!/bin/bash
+# THIS FILE IS ADDED FOR COMPATIBILITY PURPOSES
+#
+# It is highly advisable to create own systemd services or udev rules
+# to run scripts during boot instead of using this file.
+#
+# In contrast to previous versions due to parallel execution during boot
+# this script will NOT be run after all other services.
+#
+# Please note that you must run 'chmod +x /etc/rc.d/rc.local' to ensure
+# that this script will be executed during boot.
+
+touch /var/lock/subsys/local
+/usr/local/nginx/sbin/nginx
+
+```
+
+
+
+### Ubuntu设置开机启动
 
   ```shell
   sudo vi /etc/init.d/nginx
@@ -302,39 +340,6 @@
   esac
   ```
 
-- **Centos**设置开机启动
-
-  ```shell
-  vi /etc/rc.local
-  ```
-
-  最下面加入以下内容
-
-  ```shell
-  /usr/local/nginx/sbin/nginx
-  ```
-
-  rc.local 文件总览如下:
-
-  ```shell
-  #!/bin/bash
-  # THIS FILE IS ADDED FOR COMPATIBILITY PURPOSES
-  #
-  # It is highly advisable to create own systemd services or udev rules
-  # to run scripts during boot instead of using this file.
-  #
-  # In contrast to previous versions due to parallel execution during boot
-  # this script will NOT be run after all other services.
-  #
-  # Please note that you must run 'chmod +x /etc/rc.d/rc.local' to ensure
-  # that this script will be executed during boot.
-  
-  touch /var/lock/subsys/local
-  /usr/local/nginx/sbin/nginx
-  
-  ```
-
-  
 
 - 设置服务脚本有执行权限
 
