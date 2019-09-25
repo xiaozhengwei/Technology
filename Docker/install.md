@@ -1,10 +1,6 @@
-## 环境
+## 简易安装 Docker 
 
 - 使用环境 : Centos7
-
-- 内核版本 : 3.10.0-957.el7.x86_64
-
-## 简易安装 Docker 
 
 ```shell
 1. yum update	
@@ -13,5 +9,12 @@
 4. systemctl enable docker
 ```
 
+- 使用环境 : Ubuntu 18.04
 
+```shell
+1. apt update	
+2. apt install docker.io
+3. systemctl start docker
+4. systemctl enable docker
+```
 
