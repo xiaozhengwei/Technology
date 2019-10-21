@@ -39,7 +39,7 @@ docker run -p 5672:5672 -p 15672:15672 --name rabbitmq  `rabbitmq`
 docker pull elasticsearch:6.8.3
 
 # 第一个 `elasticsearch` 为容器的名字( 自行编辑 ), 第二个 `elasticsearch` 为镜像/镜像ID( 自行编辑 )
-docker run -p 9200:9200 -p 9300:9300 --name elasticsearch  `elasticsearch`
+docker run -d -p 9200:9200 -p 9300:9300 --name elasticsearch  `elasticsearch`
 
 # 可选项
 # -e "ES_JAVA_OPTS=-Xms512m -Xmx512m"
