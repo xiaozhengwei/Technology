@@ -4,7 +4,7 @@
 
   - 消息头
 
-    - routing-key ( 路由键 )
+    - router-key ( 路由键 )
 
     - priority ( 相对于其他消息的优先权 )
 
