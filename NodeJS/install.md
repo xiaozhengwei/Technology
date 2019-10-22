@@ -1,10 +1,16 @@
 ## Windows 安装
 
+
+
+### 下载NodeJS
+
 **下载稳定版的NodeJS ( 下面是我写此文档时使用的NodeJS版本,直接复制链接到浏览器地址栏即可下载 )**
 
 ```shell
 https://npm.taobao.org/mirrors/node/v12.11.1/node-v12.11.1-x64.msi 
 ```
+
+
 
 ### 安装NodeJS 
 
@@ -59,3 +65,65 @@ npm config set cache  "D:\NodeJS\node_cache"
 
 
 
+## Ubuntu 安装
+
+
+
+### 下载NodeJS
+
+**下载稳定版的NodeJS ( 下面是我写此文档时使用的NodeJS版本,直接复制链接到浏览器地址栏即可下载 )**
+
+```shell
+wget https://npm.taobao.org/mirrors/node/v12.12.0/node-v12.12.0-linux-x64.tar.xz
+```
+
+
+
+### 解压NodeJS
+
+```shell
+tar -xvf node-v12.12.0-linux-x64.tar.xz -C /usr/local
+```
+
+
+
+### 配置环境变量
+
+
+
+#### 编辑 /etc/profile文件
+
+```shell
+vi /etc/profile
+```
+
+
+
+#### 在 /etc/profile 文件末尾新加
+
+```shell
+export NODE_HOME=/usr/local/nodejs
+export PATH=$PATH:$NODE_HOME/bin
+export PATH=$PATH:$NODE_HOME/node_global
+```
+
+
+
+### 配置 npm 为淘宝镜像
+
+#### 打开cmd 输入以下内容
+
+```shell
+npm config set registry https://registry.npm.taobao.org
+```
+
+
+
+### 配置 npm 包和缓存的路径
+
+#### 打开cmd ,依次输入以下内容
+
+```
+npm config set prefix "D:\NodeJS\node_global"
+npm config set cache  "D:\NodeJS\node_cache"
+```
