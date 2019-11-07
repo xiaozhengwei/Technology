@@ -1,3 +1,7 @@
+[TOC]
+
+
+
 ## Windows 安装
 
 
@@ -104,7 +108,7 @@ vi /etc/profile
 ```shell
 export NODE_HOME=/usr/local/nodejs
 export PATH=$PATH:$NODE_HOME/bin
-export PATH=$PATH:$NODE_HOME/node_global
+export PATH=$PATH:$NODE_HOME/node_global/bin
 ```
 
 

@@ -11,7 +11,7 @@
 
 ```shell
 # 根据镜像启动容器
-docker run --name  mySoftWare -d  softwareName : tag
+docker run --name  mySoftWare -d  softwareName:tag
     mySoftWare为自定义名字
 	-d : 后台运行
 	-p : 将主机的端口映射到主机的
