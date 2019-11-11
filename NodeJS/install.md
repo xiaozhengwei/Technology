@@ -91,6 +91,14 @@ tar -xvf node-v12.12.0-linux-x64.tar.xz -C /usr/local
 
 
 
+### 重命名
+
+```shell
+mv /usr/local/node-v12.12.0-linux-x64 /usr/local/nodejs
+```
+
+
+
 ### 配置环境变量
 
 
