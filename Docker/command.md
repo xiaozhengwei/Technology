@@ -11,12 +11,13 @@
 
 ```shell
 # 根据镜像启动容器
-docker run --name  mySoftWare -d  softwareName:tag
+docker run --name  mySoftWare -d  softwareName:tag --restart=always
     mySoftWare为自定义名字
 	-d : 后台运行
 	-p : 将主机的端口映射到主机的
     softwareName : 启动的镜像名字
     tag : 标签 比如说版本
+    --restart=always : docker服务器重启,容器也跟着一起重启
 ```
 
 
@@ -45,6 +46,13 @@ docker stop `containerid`
 ```shell
 # 删除一个容器
 docker rm `containerid`
+```
+
+
+
+```shell
+# 随着docke服务的重启,自动重启(对于已经运行的容器)
+docker update --restart=always 
 ```
 
 
