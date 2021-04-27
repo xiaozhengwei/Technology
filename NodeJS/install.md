@@ -6,9 +6,9 @@
 
 
 
-### 下载NodeJS
+### 下载nodejs
 
-**下载稳定版的NodeJS ( 下面是我写此文档时使用的NodeJS版本,直接复制链接到浏览器地址栏即可下载 )**
+**下载稳定版的nodejs ( 下面是我写此文档时使用的nodejs版本,直接复制链接到浏览器地址栏即可下载 )**
 
 ```shell
 https://npm.taobao.org/mirrors/node/v12.11.1/node-v12.11.1-x64.msi 
@@ -16,13 +16,13 @@ https://npm.taobao.org/mirrors/node/v12.11.1/node-v12.11.1-x64.msi
 
 
 
-### 安装NodeJS 
+### 安装nodejs 
 
 #### 将node-v12.11.1-x64.msi 安装到你自己喜欢的路径
 
 ```shell
-我安装到了 D:\NodeJS 目录下
-进入到 D:\NodeJS 目录下
+我安装到了 D:\nodejs 目录下
+进入到 D:\nodejs 目录下
 ```
 
 ![1570502337195](./images/1.png)
@@ -41,8 +41,8 @@ https://npm.taobao.org/mirrors/node/v12.11.1/node-v12.11.1-x64.msi
 
 #### 编辑Path,新增两条信息
 
-- D:\NodeJS
-- D:\NodeJS\node_global
+- D:\nodejs
+- D:\nodejs\node_global
 
 ![1570503113576](./images/4.png)
 
@@ -63,8 +63,8 @@ npm config set registry https://registry.npm.taobao.org
 #### 打开cmd ,依次输入以下内容
 
 ```
-npm config set prefix "D:\NodeJS\node_global"
-npm config set cache  "D:\NodeJS\node_cache"
+npm config set prefix "D:\nodejs\node_global"
+npm config set cache  "D:\nodejs\node_cache"
 ```
 
 
@@ -73,9 +73,9 @@ npm config set cache  "D:\NodeJS\node_cache"
 
 
 
-### 下载NodeJS
+### 下载nodejs
 
-**下载稳定版的NodeJS ( 下面是我写此文档时使用的NodeJS版本,直接复制链接到浏览器地址栏即可下载 )**
+**下载稳定版的nodejs ( 下面是我写此文档时使用的nodejs版本,直接复制链接到浏览器地址栏即可下载 )**
 
 ```shell
 wget https://npm.taobao.org/mirrors/node/v12.12.0/node-v12.12.0-linux-x64.tar.xz
@@ -83,7 +83,7 @@ wget https://npm.taobao.org/mirrors/node/v12.12.0/node-v12.12.0-linux-x64.tar.xz
 
 
 
-### 解压NodeJS
+### 解压nodejs
 
 ```shell
 tar -xvf node-v12.12.0-linux-x64.tar.xz -C /usr/local
@@ -136,6 +136,6 @@ npm config set registry https://registry.npm.taobao.org
 #### 打开cmd ,依次输入以下内容
 
 ```
-npm config set prefix "D:\NodeJS\node_global"
-npm config set cache  "D:\NodeJS\node_cache"
+npm config set prefix "D:\nodejs\node_global"
+npm config set cache  "D:\nodejs\node_cache"
 ```
