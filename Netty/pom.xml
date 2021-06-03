@@ -3,9 +3,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.utunan</groupId>
-    <artifactId>Algorithm-and-DataStructure</artifactId>
+    <artifactId>Netty</artifactId>
     <version>1.0.0</version>
-    <name>Algorithm-and-DataStructure</name>
+    <name>Netty</name>
     <packaging>pom</packaging>
 
     <properties>
@@ -16,11 +16,7 @@
     </properties>
 
     <modules>
-        <module>LeetCode</module>
-        <module>Max-heap</module>
-        <module>Recursive</module>
-        <module>Sort</module>
-        <module>SwordFingerOffer</module>
+        <module>mq</module>
     </modules>
 
     <dependencies>
