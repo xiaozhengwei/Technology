@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Count-Min-Sketch" />
+        <module name="Dynamic-Programming" />
+        <module name="Max-heap" />
+        <module name="Recursive" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Algorithm-and-DataStructure" target="11" />
+      <module name="Big root pile" target="11" />
+      <module name="Count-Min-Sketch" target="11" />
+      <module name="Dynamic-Programming" target="11" />
+      <module name="Max-heap" target="11" />
+      <module name="Recursive" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

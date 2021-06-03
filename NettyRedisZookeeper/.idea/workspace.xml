@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="59374731-8353-4bd7-9130-4cec6ca2bae7" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:\environment\maven\apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="D:\environment\config\maven\settings-aliyun.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1rMrTWZVtQU7tvbbVrdmv0QMmOl" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\github\xiaozhengwei.github.io\example\Netty" />
+      <recent name="D:\github\xiaozhengwei.github.io\example\Netty\Buffer\src\main\java\com\utunan" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\github\xiaozhengwei.github.io\example\Netty\Buffer" />
+      <recent name="D:\github\xiaozhengwei.github.io\example\Netty\Buffer\src\main\java\com\utunan" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.FileCopyDemo">
+    <configuration name="FileCopyDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.utunan.iodemo.fileDemos.FileCopyDemo" />
+      <module name="nio-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.utunan.iodemo.fileDemos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NioReceiveServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.utunan.iodemo.socketDemos.NioReceiveServer" />
+      <module name="NIODemos" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.utunan.iodemo.socketDemos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NioSendClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.utunan.iodemo.socketDemos.NioSendClient" />
+      <module name="NIODemos" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.utunan.iodemo.socketDemos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.FileCopyDemo" />
+        <item itemvalue="Application.NioSendClient" />
+        <item itemvalue="Application.NioReceiveServer" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="59374731-8353-4bd7-9130-4cec6ca2bae7" name="Default Changelist" comment="" />
+      <created>1618796809743</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1618796809743</updated>
+      <workItem from="1618796810827" duration="10080000" />
+      <workItem from="1618879964360" duration="1129000" />
+      <workItem from="1618881218491" duration="6684000" />
+      <workItem from="1618904508914" duration="464000" />
+      <workItem from="1618905005400" duration="2763000" />
+      <workItem from="1619090697748" duration="14000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="121" y="0" key="#Project_Structure" timestamp="1618904110294">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="121" y="0" key="#Project_Structure/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1618904110294" />
+    <state x="2102" y="0" key="#Project_Structure/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1618881280554" />
+    <state x="2334" y="174" width="1092" height="741" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1618881639903">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2334" y="174" width="1092" height="741" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1618881639903" />
+    <state x="2612" y="320" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1618880949390">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2612" y="320" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1618880949390" />
+    <state x="421" y="95" key="FileChooserDialogImpl" timestamp="1618904066842">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1618904066842" />
+    <state width="1237" height="204" key="GridCell.Tab.0.bottom" timestamp="1618907375422">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="204" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1618907375422" />
+    <state width="1921" height="249" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1618824313499" />
+    <state width="1237" height="204" key="GridCell.Tab.0.center" timestamp="1618907375422">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="204" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1618907375422" />
+    <state width="1921" height="249" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1618824313499" />
+    <state width="1237" height="204" key="GridCell.Tab.0.left" timestamp="1618907375421">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="204" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1618907375421" />
+    <state width="1921" height="249" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1618824313499" />
+    <state width="1237" height="204" key="GridCell.Tab.0.right" timestamp="1618907375422">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="204" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1618907375422" />
+    <state width="1921" height="249" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1618824313499" />
+    <state width="1237" height="204" key="GridCell.Tab.1.bottom" timestamp="1618905549932">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="204" key="GridCell.Tab.1.bottom/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1618905549932" />
+    <state width="1237" height="204" key="GridCell.Tab.1.center" timestamp="1618905549932">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="204" key="GridCell.Tab.1.center/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1618905549932" />
+    <state width="1237" height="204" key="GridCell.Tab.1.left" timestamp="1618905549931">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="204" key="GridCell.Tab.1.left/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1618905549931" />
+    <state width="1237" height="204" key="GridCell.Tab.1.right" timestamp="1618905549932">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="204" key="GridCell.Tab.1.right/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1618905549932" />
+    <state x="2410" y="174" key="Maven.ArtifactSearchDialog" timestamp="1618884601976">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2410" y="174" key="Maven.ArtifactSearchDialog/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1618884601976" />
+    <state x="142" y="0" key="SettingsEditor" timestamp="1618905038548">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="142" y="0" key="SettingsEditor/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1618905038548" />
+    <state x="2133" y="0" key="SettingsEditor/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1618880970406" />
+    <state x="2407" y="255" width="945" height="642" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1618823827514">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2407" y="255" width="945" height="642" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1618823827514" />
+    <state x="441" y="48" width="595" height="594" key="find.popup" timestamp="1618904946285">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="441" y="48" width="595" height="594" key="find.popup/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1618904946285" />
+    <state x="2582" y="74" width="678" height="891" key="find.popup/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1618882540475" />
+    <state x="28" y="0" key="new project wizard" timestamp="1618797153945">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="28" y="0" key="new project wizard/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1618797153945" />
+    <state x="2536" y="240" key="run.anything.popup" timestamp="1618822660398">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2536" y="240" key="run.anything.popup/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1618822660398" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.nio.BufferUnderflowException" package="java.nio" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
