@@ -16,6 +16,8 @@
     </properties>
 
     <modules>
+        <module>Count-Min-Sketch</module>
+        <module>Dynamic-Programming</module>
         <module>LeetCode</module>
         <module>Max-heap</module>
         <module>Recursive</module>

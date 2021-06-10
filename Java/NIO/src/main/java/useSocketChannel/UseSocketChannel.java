@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;
+import java.nio.channels.Selector;
 import java.nio.channels.SocketChannel;
 
 public class UseSocketChannel {
@@ -25,7 +26,7 @@ public class UseSocketChannel {
         // 对服务的IP, PORT 进行链接
         socketChannel.connect(new InetSocketAddress("127.0.0.1", 80));
 
-        while(!socketChannel.finishConnect()){
+        while (!socketChannel.finishConnect()) {
             // 不停的自旋
         }
 
