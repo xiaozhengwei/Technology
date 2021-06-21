@@ -23,7 +23,7 @@ public class Question19 {
             return true;
         }
         // 如果模式到了结尾，字符串没有到结尾，返回false
-        if (patternIndex == pattern.length && strIndex != str.length) {
+        if (patternIndex == pattern.length) {
             return false;
         }
         // 模式的当前位置的下一个位置为*
@@ -47,6 +47,5 @@ public class Question19 {
             return matchCore(str, strIndex + 1, pattern, patternIndex + 1);
         }
         return false;
-
     }
 }

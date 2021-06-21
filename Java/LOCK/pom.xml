@@ -9,7 +9,7 @@
         <artifactId>java</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-    <artifactId>lock</artifactId>
+    <artifactId>LOCK</artifactId>
 
 
     <properties>

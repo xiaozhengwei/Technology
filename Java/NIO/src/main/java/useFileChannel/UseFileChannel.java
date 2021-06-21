@@ -55,8 +55,6 @@ public class UseFileChannel {
                     //清除buf,变成写入模式
                     buf.clear();
                 }
-
-
                 //强制刷新磁盘
                 outchannel.force(true);
             } finally {
