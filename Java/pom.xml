@@ -11,6 +11,7 @@
         <module>JUC</module>
         <module>LOCK</module>
         <module>NIO</module>
+        <module>COLLECTION</module>
     </modules>
 
     <packaging>pom</packaging>
