@@ -8,6 +8,14 @@ public class CollectionTest {
 
     public static void main(String[] args) {
         Deque<String> deque=new ArrayDeque<>();
+        Runnable runnable=new Runnable() {
+            @Override
+            public void run() {
+
+            }
+        };
+
+        Thread thread=new Thread();
     }
 
 }

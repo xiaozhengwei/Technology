@@ -1,17 +1,22 @@
-# Nginx
+# 安装Nginx
 
+## 创建本地磁盘挂载的目录
+
+```shell
+mkdir -p /home/nginx /home/nginx/logs /home/nginx/html /home/nginx/conf/conf.d
+touch /home/nginx/conf/nginx.conf
 ```
-docker run \
--p 80:80 \
--p 443:443
---name nginx \
---restart=always \
--v /home/nginx/conf/cert:/etc/nginx/cert \
--v /home/nginx/conf/nginx.conf:/etc/nginx/nginx.conf \
--v /home/nginx/conf/conf.d:/etc/nginx/conf.d \
--v /home/nginx/html:/usr/share/nginx/html \
--v /home/nginx/logs:/var/log/nginx \
--d \
-nginx
+
+## 创建容器
+
+```shell
+docker run -p 80:80 -p 443:443 --name nginx --restart=always -v /home/nginx/conf/cert:/etc/nginx/cert -v /home/nginx/conf/nginx.conf:/etc/nginx/nginx.conf -v /home/nginx/conf/conf.d:/etc/nginx/conf.d -v /home/nginx/html:/usr/share/nginx/html -v /home/nginx/logs:/var/log/nginx -d nginx
+```
+
+
+
+# Nginx 通用配置
+
+```shell
 ```
 
