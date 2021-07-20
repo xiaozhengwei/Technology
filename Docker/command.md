@@ -31,7 +31,7 @@ docker ps  [-a : 所有的]
 
 ```shell
 # 启动已经终止的容器
-docker container start `containerid`
+docker start `containerid`
 ```
 
 
