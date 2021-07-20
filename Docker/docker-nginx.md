@@ -5,6 +5,8 @@
 ```shell
 mkdir -p /home/nginx /home/nginx/logs /home/nginx/html /home/nginx/conf/conf.d;
 touch /home/nginx/conf/nginx.conf;
+# 目前我按照下方的Nginx通用配置进行配置的.
+vi /home/nginx/conf/nginx.conf; 
 ```
 
 ## 创建容器
@@ -41,7 +43,7 @@ http {
         server_name  localhost;
 
         location / {
-            root   /usr/share/nginx/html
+            root   /usr/share/nginx/html;
             index  index.html index.htm;
         }
 
