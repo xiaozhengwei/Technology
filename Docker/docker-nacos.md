@@ -63,3 +63,24 @@ docker run \
 nacos/nacos-server;
 ```
 
+```shell
+docker run \
+-d \
+--name nacos \
+--restart=always  \
+-p 8848:8848 \
+-e MODE=standalone \
+-e JVM_XMS=256m \
+-e JVM_XMX=256m \
+-e SPRING_DATASOURCE_PLATFORM=mysql \
+-e MYSQL_SERVICE_HOST=rm-2ze2z766loml0355klo.mysql.rds.aliyuncs.com \
+-e MYSQL_SERVICE_PORT=3306 \
+-e MYSQL_SERVICE_DB_NAME=nacos_config \
+-e MYSQL_SERVICE_USER=nacos \
+-e MYSQL_SERVICE_PASSWORD=RFVTGBYHNUJM \
+-e MYSQL_DATABASE_NUM=1 \
+-v /home/nacos/init.d/custom.properties:/home/nacos/init.d/custom.properties \
+-v /home/nacos/logs:/home/nacos/logs \
+nacos/nacos-server;
+```
+
