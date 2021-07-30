@@ -1,4 +1,12 @@
 ## elasticsearch
+
+```
+mkdir -p /home/elasticsearch/config/ /home/elasticsearch/data /home/elasticsearch/plugins;
+touch /home/elasticsearch/config/elasticsearch.yml;
+```
+
+
+
 ```shell
 docker run \
 --name elasticsearch \
