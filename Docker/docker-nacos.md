@@ -5,7 +5,7 @@
 ## 创建目录
 
 ```shell
-mkdir -p /home/nacos/init.d/;
+mkdir -p /home/nacos/init.d/ /home/nacos/logs;
 touch /home/nacos/init.d/custom.properties;
 ```
 
@@ -49,6 +49,27 @@ nacos.naming.expireInstance=true
 ```
 
 ## 启动Nacos
+
+```shell
+docker run -d \
+-e PREFER_HOST_MODE=182.92.195.140 \
+-e MODE=standalone \
+-e SPRING_DATASOURCE_PLATFORM=mysql \
+-e MYSQL_SERVICE_HOST=rm-2ze2z766loml0355klo.mysql.rds.aliyuncs.com \
+-e MYSQL_SERVICE_PORT=3306 \
+-e MYSQL_SERVICE_USER=nacos \
+-e MYSQL_SERVICE_PASSWORD=RFVTGBYHNUJM \
+-e MYSQL_SERVICE_DB_NAME=nacos_config \
+-e JVM_XMS=256m \
+-e JVM_XMX=256m \
+-v /home/nacos/logs:/home/nacos/logs \
+-p 8848:8848 \
+--name nacos \
+--restart=always \
+nacos/nacos-server;
+```
+
+
 
 ```shell
 docker run \
