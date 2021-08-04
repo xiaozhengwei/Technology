@@ -52,7 +52,7 @@ nacos.naming.expireInstance=true
 
 ```shell
 docker run -d \
--e PREFER_HOST_MODE=182.92.195.140 \
+-e PREFER_HOST_MODE=180.76.100.50 \
 -e MODE=standalone \
 -e SPRING_DATASOURCE_PLATFORM=mysql \
 -e MYSQL_SERVICE_HOST=rm-2ze2z766loml0355klo.mysql.rds.aliyuncs.com \
