@@ -8,7 +8,6 @@ public class QuickSort {
      * @param array 待排序的数组
      * @param left  起点索引
      * @param right 终点索引
-     * @return
      */
     public static int partition(int[] array, int left, int right) {
         int num = array[left];
