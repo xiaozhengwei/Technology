@@ -12,7 +12,6 @@ public class Leetcode345 {
 
     class Solution {
 
-
         public boolean isVowel(char ch) {
             return "aeiouAEIOU".indexOf(ch) >= 0;
         }
