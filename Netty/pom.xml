@@ -16,7 +16,7 @@
     </properties>
 
     <modules>
-        <module>mq</module>
+        <module>NettyDemos</module>
     </modules>
 
     <dependencies>
