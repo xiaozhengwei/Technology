@@ -23,6 +23,7 @@
         <module>Recursive</module>
         <module>Sort</module>
         <module>SwordFingerOffer</module>
+        <module>SwordFingerOfferTwo</module>
     </modules>
 
     <dependencies>
