@@ -3,7 +3,7 @@
 ## 安装前准备
 
 ```shell
-mkdir -p /home/redis/data
+mkdir -p /home/redis/data /home/redis/conf
 touch /home/redis/conf/redis.conf
 ```
 
@@ -22,5 +22,6 @@ protected-mode no 	#默认yes，开启保护模式，限制为本地访问
 
 ```shell
 # [密码为:12345678]
-docker run -p 6379:6379 -v /home/redis/data:/data:rw -v /home/redis/conf/redis.conf:/etc/redis/redis.conf:ro --privileged=true --name redis -d redis redis-server /etc/redis/redis.conf --restart=always --requirepass 12345678 
+docker run --restart always -p 6379:6379 -v /home/redis/data:/data:rw -v /home/redis/conf/redis.conf:/etc/redis/redis.conf:ro --privileged=true --name redis -d redis redis-server /etc/redis/redis.conf --requirepass RFVTGBYHNUJM 
 ```
+
