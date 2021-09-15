@@ -19,7 +19,7 @@ CREATE TABLE `mysql_index` (
 
 
 
-![image-20210915164520548](.\images\mysqlindex001.png)
+![image-20210915164520548](./images/mysqlindex001.png)
 
 
 ## 数据
