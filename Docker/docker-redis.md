@@ -22,6 +22,6 @@ protected-mode no 	#默认yes，开启保护模式，限制为本地访问
 
 ```shell
 # [密码为:12345678]
-docker run --restart always -p 6379:6379 -v /home/redis/data:/data:rw -v /home/redis/conf/redis.conf:/etc/redis/redis.conf:ro --privileged=true --name redis -d redis redis-server /etc/redis/redis.conf --requirepass RFVTGBYHNUJM 
+docker run --restart always -p 6379:6379 -v /home/redis/data:/data:rw -v /home/redis/conf/redis.conf:/etc/redis/redis.conf:ro --privileged=true --name redis -d redis redis-server  --requirepass RFVTGBYHNUJM 
 ```
 
