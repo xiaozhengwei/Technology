@@ -1,0 +1,4 @@
+rocketmq:
+  nameServer: 82.157.103.184:9876
+  producer:
+    group: demo-group
