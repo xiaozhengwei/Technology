@@ -1,7 +1,15 @@
+import org.junit.jupiter.api.Test;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class Leetcode212 {
+
+    @Test
+    public void run() {
+
+
+    }
 
     class Solution {
 

@@ -1,4 +1,12 @@
+import org.junit.jupiter.api.Test;
+
 public class Leetcode787 {
+
+    @Test
+    public void run() {
+
+
+    }
 
     class Solution {
         public int findCheapestPrice(int n, int[][] flights, int src, int dst, int k) {

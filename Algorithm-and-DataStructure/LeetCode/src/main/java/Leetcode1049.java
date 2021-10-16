@@ -1,4 +1,12 @@
+import org.junit.jupiter.api.Test;
+
 public class Leetcode1049 {
+
+    @Test
+    public void run() {
+
+
+    }
 
     public int lastStoneWeightII(int[] stones) {
         int sum = 0;
