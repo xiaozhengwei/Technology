@@ -1,5 +1,11 @@
-public class Leetcode36 {
+import org.junit.jupiter.api.Test;
 
+public class Leetcode36 {
+    @Test
+    public void run() {
+
+
+    }
     class Solution {
         public boolean isValidSudoku(char[][] board) {
             int[][] rows = new int[9][9];

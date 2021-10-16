@@ -30,17 +30,17 @@ http {
 ```shell
 server {
         listen       80;
-        server_name  api.utunan.com;
+        server_name  blog.utunan.com;
         rewrite ^(.*)$ https://$host$1 permanent;    
 }
 
 server {
     listen 443 ssl;
-    server_name 域名;
+    server_name blog.utunan.com;
     root html;
     index index.html index.htm;
-    ssl_certificate cert/pem文件名称; 
-    ssl_certificate_key cert/key文件名称;
+    ssl_certificate cert/6333498_blog.utunan.com.pem; 
+    ssl_certificate_key cert/6333498_blog.utunan.com.key;
     ssl_session_timeout 5m;
     ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:ECDHE:ECDH:AES:HIGH:!NULL:!aNULL:!MD5:!ADH:!RC4;
     ssl_protocols TLSv1 TLSv1.1 TLSv1.2; 
