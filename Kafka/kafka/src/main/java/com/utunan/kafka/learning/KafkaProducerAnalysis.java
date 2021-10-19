@@ -14,19 +14,24 @@ public class KafkaProducerAnalysis {
         Properties props = new Properties();
         props.put("bootstrap.servers", brokerList);
         props.put("key.serializer",
-                "org.apache.kafka.common.serialization.S七ringSerializer");
+                "org.apache.kafka.common.serialization.StringSerializer");
         props.put("value.serializer",
-                "org.apache.kafka.common.serialization.S七ringSerializer");
-        props.put("client. id", "producer. client. id. demo");
+                "org.apache.kafka.common.serialization.StringSerializer");
+        props.put("client.id", "group.demo");
         return props;
     }
+
     public static void main(String[] args) {
         Properties props = initConfig();
         KafkaProducer<String, String> producer = new KafkaProducer<>(props);
-        ProducerRecord<String, String> record =
-                new ProducerRecord<>(topic, "hello, Kafka1 ");
+
+        ProducerRecord<String, String> record = new ProducerRecord<>(topic, "hello , Kafka , ");
         try {
-            producer.send(record);
+            for (int i = 0; i < 1000; i++) {
+
+                producer.send(record);
+
+            }
         } catch (Exception e) {
             e.printStackTrace();
         }
