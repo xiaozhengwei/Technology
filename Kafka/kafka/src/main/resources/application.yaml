@@ -19,3 +19,8 @@ spring:
       properties:
         session.timeout.ms: 15000
       group-id: test-group
+
+logging:
+  level:
+    com.utunan: info
+    org.apache: info
