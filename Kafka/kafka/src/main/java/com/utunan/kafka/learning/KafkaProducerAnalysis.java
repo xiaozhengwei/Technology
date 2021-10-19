@@ -1,6 +1,8 @@
 package com.utunan.kafka.learning;
 
+import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.clients.producer.KafkaProducer;
+import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.clients.producer.ProducerRecord;
 
 import java.util.Properties;
@@ -12,12 +14,12 @@ public class KafkaProducerAnalysis {
 
     public static Properties initConfig() {
         Properties props = new Properties();
-        props.put("bootstrap.servers", brokerList);
-        props.put("key.serializer",
+        props.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, brokerList);
+        props.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG,
                 "org.apache.kafka.common.serialization.StringSerializer");
-        props.put("value.serializer",
+        props.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG,
                 "org.apache.kafka.common.serialization.StringSerializer");
-        props.put("client.id", "group.demo");
+        props.put(ProducerConfig.CLIENT_ID_CONFIG, "client.id.demo");
         return props;
     }
 
