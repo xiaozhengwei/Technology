@@ -1,4 +1,4 @@
-package com.utunan.kafka.learning;
+package com.utunan.kafka.learning.consumer;
 
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
@@ -27,6 +27,8 @@ public class KafkaConsumerAnalysis {
         properties.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getName());
         properties.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, brokerList);
         properties.put(ConsumerConfig.GROUP_ID_CONFIG, groupId);
+        // 自动提交
+        //properties . put(ConsumerConfig.ENABLE_AUTO_COMMIT_CONFIG , false);
         properties.put(ConsumerConfig.CLIENT_ID_CONFIG, clientId);
         return properties;
     }

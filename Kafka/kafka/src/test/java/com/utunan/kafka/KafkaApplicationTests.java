@@ -8,6 +8,9 @@ class KafkaApplicationTests {
 
     @Test
     void contextLoads() {
+        int a=Runtime.getRuntime().availableProcessors();
+        System.out.println(a);
     }
+
 
 }

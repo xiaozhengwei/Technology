@@ -14,12 +14,23 @@ nohup bin/kafka-server-start.sh config/server.properties > kafka.out &
 
 
 
-## 创建主题
+## 创建主题【topic-create】
 
 ```
 # replication-factor  复制因子 必须小于等于broker个数
 # partitions 分区个数
-bin/kafka-topics.sh --create --topic topic2-demo --replication-factor 1 --partitions 2 --bootstrap-server kafka.utunan.com:9092
+bin/kafka-topics.sh --create --topic topic-create --bootstrap-server kafka.utunan.com:9092 --replication-factor 1 --partitions 3 
+
+bin/kafka-topics.sh --create --topic topic-create --bootstrap-server kafka.utunan.com:9092 --replica-assignment
+
+```
+
+
+
+## 查看分区副本细节【topic-create】
+
+```
+bin/kafka-topics.sh  --bootstrap-server kafka.utunan.com:9092 --describe --topic topic-create
 ```
 
 
@@ -32,7 +43,7 @@ bin/kafka-topics.sh --list --bootstrap-server kafka.utunan.com:9092
 
 
 
-## 订阅主题topic-demo
+## 订阅主题【topic-demo】
 
 ```
 bin/kafka-console-consumer.sh --bootstrap-server kafka.utunan.com:9092 --topic topic-demo
@@ -45,4 +56,14 @@ bin/kafka-console-consumer.sh --bootstrap-server kafka.utunan.com:9092 --topic t
 ```
 bin/kafka-console-producer.sh --broker-list  kafka.utunan.com:9092  --topic topic-demo
 ```
+
+
+
+## 删除主题【topic-demo】
+
+```
+bin/kafka-topics.sh --bootstrap-server kafka.utunan.com:9092 --delete --topic topic-demo
+```
+
+
 
