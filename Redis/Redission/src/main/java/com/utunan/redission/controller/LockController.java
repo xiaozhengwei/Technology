@@ -6,7 +6,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
-import java.util.concurrent.TimeUnit;
 
 @RestController
 @RequestMapping("lock")
@@ -16,22 +15,15 @@ public class LockController {
     private RedissonClient redissonClient;
 
     @RequestMapping("v1")
-    public String lockV1() throws InterruptedException {
-        RLock v1Lock = redissonClient.getLock("v1-lock");
+    public String lockV1() {
+        RLock lock = redissonClient.getLock("v1-lock");
 
-        try {
-            boolean isLock = v1Lock.tryLock();
-            if (isLock) {
-                System.out.println("666");
-            } else {
-                System.out.println("No 666");
-            }
-            Thread.sleep(10000L);
-        } catch (Exception e) {
+        lock.lock();
 
-        } finally {
-            v1Lock.unlock();
-        }
+
+        lock.unlock();
+
+
         return "successful";
     }
 
