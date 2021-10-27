@@ -12,8 +12,9 @@ public class SendMessageController {
 
     private KafkaTemplate<String, Object> template;
 
+    
     @RequestMapping("test")
-    public String sendTestMessage() {
+    public String sendTestMessage(String test) {
         template.send("test", "test");
         return "successful";
     }
