@@ -33,6 +33,7 @@ public class ConsumerFastStart {
         KafkaConsumer<String, String> consumer = new KafkaConsumer<String, String>(properties);
 
         consumer.subscribe(Collections.singleton(topic));
+        
 
         while (true) {
             ConsumerRecords<String, String> records = consumer.poll(Duration.ofMillis(1000));
