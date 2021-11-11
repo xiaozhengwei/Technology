@@ -12,7 +12,7 @@ public class Leetcode797 {
 
     }
 
-    class Solution {
+    static class Solution {
 
         List<List<Integer>> answer = new ArrayList<>();
         Deque<Integer> stack = new ArrayDeque<>();

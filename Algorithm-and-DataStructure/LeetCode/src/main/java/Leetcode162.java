@@ -8,7 +8,7 @@ public class Leetcode162 {
 
     }
 
-    class Solution {
+    static class Solution {
         /**
          * public int findPeakElement(int[] nums) {
          * int MAX = Integer.MIN_VALUE;

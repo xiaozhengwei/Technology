@@ -5,7 +5,7 @@ import java.util.List;
 public class Leetcode206 {
 
 
-    class Solution {
+    static class Solution {
         public ListNode reverseList(ListNode head) {
 
             ListNode prev=null;

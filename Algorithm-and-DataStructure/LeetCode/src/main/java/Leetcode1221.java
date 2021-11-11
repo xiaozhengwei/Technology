@@ -6,7 +6,7 @@ public class Leetcode1221 {
         Solution solution = new Solution();
     }
 
-    class Solution {
+    static class Solution {
         public int balancedStringSplit(String s) {
             char[] arr = s.toCharArray();
             int length = arr.length;

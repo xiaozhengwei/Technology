@@ -10,7 +10,7 @@ public class Leetcode345 {
         solution.reverseVowels("asd");
     }
 
-    class Solution {
+    static class Solution {
 
         public boolean isVowel(char ch) {
             return "aeiouAEIOU".indexOf(ch) >= 0;

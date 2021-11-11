@@ -24,7 +24,7 @@ public class Leetcode502 {
         }
 
     }
-    class Solution {
+    static class Solution {
         public class Node {
             public Integer profit;
             public Integer capital;

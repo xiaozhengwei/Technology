@@ -11,7 +11,7 @@ public class Leetcode412 {
 
     }
 
-    class Solution {
+    static class Solution {
         public List<String> fizzBuzz(int n) {
             List<String> results=new ArrayList<>();
             for(int i=1;i<=n;i++){

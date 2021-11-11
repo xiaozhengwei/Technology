@@ -10,7 +10,7 @@ public class Leetcode97 {
 
     }
 
-    class Solution {
+    static class Solution {
         public boolean isInterleave(String s1, String s2, String s3) {
             if (s1.isEmpty() && s2.isEmpty() && s3.isEmpty()) {
                 return true;

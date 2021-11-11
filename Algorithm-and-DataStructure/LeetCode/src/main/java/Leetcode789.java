@@ -2,7 +2,7 @@ import org.junit.jupiter.api.Test;
 
 public class Leetcode789 {
 
-    class Solution {
+    static class Solution {
         public boolean escapeGhosts(int[][] ghosts, int[] target) {
             int myLength=Math.abs(target[0]-0)+Math.abs(target[1]-0);
             for(int[] ghost:ghosts){
