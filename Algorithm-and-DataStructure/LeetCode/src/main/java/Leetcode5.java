@@ -4,54 +4,48 @@ public class Leetcode5 {
 
     @Test
     public void run(){
-        Solution solution=new Solution();
+
+        Solution solution= new Solution();
+
     }
 
-
-    class Solution {
+    static class Solution {
         public String longestPalindrome(String s) {
-
-            int length = s.length();
-
-            if (length < 2) {
+            if (s.length()<2){
                 return s;
             }
-
-            int maxLength = 1;
-            int begin = 0;
+            int[][] dp = new int[s.length()][s.length()];
             char[] chars = s.toCharArray();
-
-            boolean[][] dp = new boolean[length][length];
-
-            for (int i = 0; i < length; i++) {
-                dp[i][i] = true;
+            for (int i = 0; i < s.length(); i++) {
+                dp[i][i] = 1;
             }
-
-            for (int L = 2; L <= length; L++) {
-                for (int i = 0; i < length; i++) {
-                    int j = i + L - 1;
-
-                    if (j >= length) {
+            int maxLength = 1;
+            int start = 0;
+            for (int L = 2; L <= s.length(); L++) {
+                for (int i = 0; i < s.length(); i++) {
+                    int j = L + i - 1;
+                    if (j >= s.length()) {
                         break;
                     }
 
-                    if (chars[i] != chars[j]) {
-                        dp[i][j] = false;
+                    if (chars[j] != chars[i]) {
+                        dp[i][j] = 0;
                     } else {
                         if (j - i < 3) {
-                            dp[i][j] = true;
+                            dp[i][j] = 1;
                         } else {
                             dp[i][j] = dp[i + 1][j - 1];
                         }
                     }
 
-                    if (dp[i][j] && j - i + 1 > maxLength) {
-                        begin = i;
-                        maxLength = j - i + 1;
+                    if (dp[i][j] == 1 && (j - i + 1) > maxLength) {
+                        start = i;
+                        maxLength = L;
                     }
                 }
+
             }
-            return s.substring(begin, begin + maxLength);
+            return s.substring(start,start+maxLength);
         }
     }
 }

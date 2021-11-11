@@ -11,7 +11,7 @@ public class Leetcode212 {
 
     }
 
-    class Solution {
+    static class Solution {
 
         public List<String> findWords(char[][] board, String[] words) {
             List<String> answers = new ArrayList<>();

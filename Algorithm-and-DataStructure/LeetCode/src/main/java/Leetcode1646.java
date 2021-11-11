@@ -3,7 +3,7 @@ import org.junit.jupiter.api.Test;
 public class Leetcode1646 {
 
 
-    class Solution {
+    static class Solution {
         public int getMaximumGenerated(int n) {
             if(n==0)
                 return 0;

@@ -8,7 +8,7 @@ public class Leetcode787 {
 
     }
 
-    class Solution {
+    static class Solution {
         public int findCheapestPrice(int n, int[][] flights, int src, int dst, int k) {
 
             int[][] dp = new int[k + 2][n];

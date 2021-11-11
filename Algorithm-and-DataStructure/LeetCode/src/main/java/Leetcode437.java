@@ -7,7 +7,7 @@ public class Leetcode437 {
 
     }
 
-    class Solution {
+    static class Solution {
         public int pathSum(TreeNode root, int targetSum) {
 
             if (root == null) {

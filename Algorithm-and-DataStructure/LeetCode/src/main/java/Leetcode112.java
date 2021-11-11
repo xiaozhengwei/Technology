@@ -7,7 +7,7 @@ public class Leetcode112 {
     }
 
 
-    class Solution {
+    static class Solution {
 
     }
 }

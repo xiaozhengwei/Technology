@@ -9,7 +9,7 @@ public class Leetcode1109 {
         solution.corpFlightBookings(bookings,5);
     }
 
-    class Solution {
+    static class Solution {
         public int[] corpFlightBookings(int[][] bookings, int n) {
             int[] nums = new int[n];
             for (int[] booking : bookings) {
