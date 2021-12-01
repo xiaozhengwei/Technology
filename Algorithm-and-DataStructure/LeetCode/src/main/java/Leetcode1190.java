@@ -2,10 +2,13 @@ import org.junit.jupiter.api.Test;
 
 import java.util.Deque;
 import java.util.LinkedList;
-import java.util.Stack;
 
 public class Leetcode1190 {
 
+    @Test
+    public void run() {
+
+    }
 
     class Solution {
         public String reverseParentheses(String s) {

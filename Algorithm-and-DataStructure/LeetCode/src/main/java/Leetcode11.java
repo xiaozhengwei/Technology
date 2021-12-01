@@ -6,32 +6,26 @@ public class Leetcode11 {
 
     }
 
-    static class Solution {
+class Solution {
 
-        public int maxArea(int[] height) {
-
-            int length = height.length - 1;
-            int maxArea = 0;
-
-            for (int lengthIndex = 1; lengthIndex < length; lengthIndex++) {
-
-                for (int i = 0; i < height.length; i++) {
-
-                    int j = i + lengthIndex; 
-
-                    if (j >= height.length) {
-                        break;
-                    }
-
-                    if (Math.min(height[i], height[j]) * lengthIndex > maxArea) {
-                        maxArea = Math.min(height[i], height[j]);
-                    }
-                }
+    public int maxArea(int[] height) {
+        int start = 0;
+        int end = height.length - 1;
+        int maxArea = 0;
+        while (start < end) {
+            int weight = end - start;
+            int tempArea = weight * Math.min(height[start], height[end]);
+            maxArea = Math.max(tempArea, maxArea);
+            if (height[start] > height[end]) {
+                end--;
+            } else {
+                start++;
             }
-
-            return maxArea;
-
         }
 
+        return maxArea;
     }
+
+}
+
 }
