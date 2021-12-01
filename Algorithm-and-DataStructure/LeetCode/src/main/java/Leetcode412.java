@@ -8,7 +8,6 @@ public class Leetcode412 {
     @Test
     public void run() {
 
-
     }
 
     static class Solution {

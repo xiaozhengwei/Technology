@@ -6,8 +6,7 @@ public class Leetcode345 {
 
     @Test
     public void run() {
-        Solution solution = new Solution();
-        solution.reverseVowels("asd");
+
     }
 
     static class Solution {

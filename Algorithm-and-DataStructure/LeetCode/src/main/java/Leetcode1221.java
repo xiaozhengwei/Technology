@@ -3,7 +3,7 @@ import org.junit.jupiter.api.Test;
 public class Leetcode1221 {
     @Test
     public void run() {
-        Solution solution = new Solution();
+
     }
 
     static class Solution {
@@ -25,4 +25,5 @@ public class Leetcode1221 {
             return ans;
         }
     }
+
 }

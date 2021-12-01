@@ -1,6 +1,7 @@
 import org.junit.jupiter.api.Test;
 
 public class Leetcode1442 {
+
     @Test
     public void run() {
 
@@ -24,4 +25,5 @@ public class Leetcode1442 {
         }
         return ans;
     }
+
 }

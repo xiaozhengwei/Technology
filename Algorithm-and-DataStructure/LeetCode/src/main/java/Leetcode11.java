@@ -4,8 +4,6 @@ public class Leetcode11 {
     @Test
     public void run() {
 
-        Solution solution = new Solution();
-
     }
 
     static class Solution {
@@ -19,7 +17,7 @@ public class Leetcode11 {
 
                 for (int i = 0; i < height.length; i++) {
 
-                    int j = i + lengthIndex;
+                    int j = i + lengthIndex; 
 
                     if (j >= height.length) {
                         break;

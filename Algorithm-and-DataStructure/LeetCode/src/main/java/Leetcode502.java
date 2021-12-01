@@ -11,6 +11,7 @@ public class Leetcode502 {
     public void run() {
 
     }
+
     public class Node {
         public Integer profit;
         public Integer capital;
