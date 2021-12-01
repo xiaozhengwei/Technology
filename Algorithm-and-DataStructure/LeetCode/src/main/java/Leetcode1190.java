@@ -8,7 +8,7 @@ public class Leetcode1190 {
 
 
     class Solution {
-        public static String reverseParentheses(String s) {
+        public String reverseParentheses(String s) {
 
             Deque<String> stack = new LinkedList<String>();
 
