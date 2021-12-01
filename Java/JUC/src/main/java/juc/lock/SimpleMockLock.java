@@ -31,7 +31,7 @@ public class SimpleMockLock implements Lock {
         }
     }
 
-    private final static Sync sync=new Sync();
+    private final static Sync sync = new Sync();
 
     @Override
     public void lock() {
