@@ -4,8 +4,7 @@ public class Leetcode482 {
 
     @Test
     public void run() {
-        System.out.println("asdad-asdasda".toUpperCase());
-//        System.out.println(solution.licenseKeyFormatting("aaa",1));
+
     }
 
     public String licenseKeyFormatting(String s, int k) {

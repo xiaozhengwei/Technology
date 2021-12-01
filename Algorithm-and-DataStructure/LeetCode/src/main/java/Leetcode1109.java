@@ -4,9 +4,7 @@ public class Leetcode1109 {
 
     @Test
     public void run() {
-        Solution solution=new Solution();
-        int [][]bookings={{1,2,10},{2,3,20},{2,5,25}};
-        solution.corpFlightBookings(bookings,5);
+
     }
 
     static class Solution {

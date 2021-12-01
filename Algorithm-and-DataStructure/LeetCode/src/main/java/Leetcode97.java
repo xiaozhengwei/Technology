@@ -4,9 +4,6 @@ public class Leetcode97 {
 
     @Test
     public void run() {
-        Solution solution=new Solution();
-        String s1 = "aabcc", s2 = "dbbca", s3 = "aadbbcbcac";
-        solution.isInterleave(s1,s2,s3);
 
     }
 

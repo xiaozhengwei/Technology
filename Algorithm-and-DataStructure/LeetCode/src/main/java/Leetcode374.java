@@ -3,7 +3,7 @@ import org.junit.jupiter.api.Test;
 public class Leetcode374 {
 
     @Test
-    public void test1() {
+    public void run() {
 
     }
 

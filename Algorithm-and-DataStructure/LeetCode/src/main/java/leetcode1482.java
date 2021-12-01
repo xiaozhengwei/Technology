@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
-public class LeetCode1482 {
+public class leetcode1482 {
 
     @Test
     public void run() {

@@ -1,11 +1,12 @@
 import org.junit.jupiter.api.Test;
 
 public class Leetcode36 {
+
     @Test
     public void run() {
 
-
     }
+
     static class Solution {
         public boolean isValidSudoku(char[][] board) {
             int[][] rows = new int[9][9];

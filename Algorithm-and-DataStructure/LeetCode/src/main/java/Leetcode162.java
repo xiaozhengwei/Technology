@@ -5,7 +5,6 @@ public class Leetcode162 {
     @Test
     public void run() {
 
-
     }
 
     static class Solution {

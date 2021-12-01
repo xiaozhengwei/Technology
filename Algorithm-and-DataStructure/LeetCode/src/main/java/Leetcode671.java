@@ -2,6 +2,10 @@ import org.junit.jupiter.api.Test;
 
 public class Leetcode671 {
 
+    @Test
+    public void run() {
+    }
+
     public int findSecondMinimumValue(TreeNode root) {
         int[] arr = {Integer.MAX_VALUE, Integer.MAX_VALUE};
         if (root == null) {
@@ -18,7 +22,7 @@ public class Leetcode671 {
 
     public void findInTree(TreeNode root, int[] arr) {
         if (root != null) {
-            swap(arr,root.val);
+            swap(arr, root.val);
             if (root.left != null) {
                 findInTree(root.left, arr);
             }
@@ -39,7 +43,4 @@ public class Leetcode671 {
         }
     }
 
-    @Test
-    public void run() {
-    }
 }

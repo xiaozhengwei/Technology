@@ -7,16 +7,7 @@ public class Leetcode68 {
 
     @Test
     public void run() {
-        Solution solution = new Solution();
-        String[] strings = new String[7];
-        strings[0] = "This";
-        strings[1] = "is";
-        strings[2] = "an";
-        strings[3] = "example";
-        strings[4] = "of";
-        strings[5] = "text";
-        strings[6] = "justification.";
-        List<String> results = solution.fullJustify(strings, 16);
+
     }
 
     static class Solution {

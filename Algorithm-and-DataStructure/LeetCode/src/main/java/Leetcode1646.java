@@ -2,6 +2,10 @@ import org.junit.jupiter.api.Test;
 
 public class Leetcode1646 {
 
+    @Test
+    public void run() {
+
+    }
 
     static class Solution {
         public int getMaximumGenerated(int n) {
@@ -26,14 +30,8 @@ public class Leetcode1646 {
                 }
                 start++;
             }
-
             return max;
         }
     }
 
-    @Test
-    public void run(){
-        Solution solution=new Solution();
-        System.out.println(solution.getMaximumGenerated(7));
-    }
 }
