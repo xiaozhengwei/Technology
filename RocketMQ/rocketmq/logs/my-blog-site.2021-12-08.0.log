@@ -1,0 +1,58 @@
+2021-12-08 10:19:05.234  INFO 23956 --- [           main] com.utunan.RocketmqApplication           : Starting RocketmqApplication using Java 11.0.9 on DESKTOP-NAFNPCD with PID 23956 (E:\github\Technology\RocketMQ\rocketmq\target\classes started by Zero in E:\github\Technology\RocketMQ\rocketmq)
+2021-12-08 10:19:05.238  INFO 23956 --- [           main] com.utunan.RocketmqApplication           : No active profile set, falling back to default profiles: default
+2021-12-08 10:19:05.237  INFO 23956 --- [background-preinit] o.h.validator.internal.util.Version      : HV000001: Hibernate Validator 6.2.0.Final
+2021-12-08 10:19:06.689  INFO 23956 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-12-08 10:19:06.703  INFO 23956 --- [           main] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-8080"]
+2021-12-08 10:19:06.704  INFO 23956 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-08 10:19:06.704  INFO 23956 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.53]
+2021-12-08 10:19:06.896  INFO 23956 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-08 10:19:06.896  INFO 23956 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1605 ms
+2021-12-08 10:19:09.376  INFO 23956 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2021-12-08 10:19:10.834  INFO 23956 --- [           main] a.r.s.s.DefaultRocketMQListenerContainer : running container: DefaultRocketMQListenerContainer{consumerGroup='demo-consumer-simple', nameServer='rocketmq.utunan.com:9876', topic='TopicTest', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+2021-12-08 10:19:10.835  INFO 23956 --- [           main] o.a.r.s.a.ListenerContainerConfiguration : Register the listener to container, listenerBeanName:rocketMqSimpleReceiver, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_1
+2021-12-08 10:19:10.859  INFO 23956 --- [           main] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-8080"]
+2021-12-08 10:19:10.878  INFO 23956 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-08 10:19:10.895  INFO 23956 --- [           main] com.utunan.RocketmqApplication           : Started RocketmqApplication in 6.313 seconds (JVM running for 7.982)
+2021-12-08 10:19:12.206  INFO 23956 --- [RMI TCP Connection(3)-172.16.6.50] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-08 10:19:12.206  INFO 23956 --- [RMI TCP Connection(3)-172.16.6.50] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-12-08 10:19:12.208  INFO 23956 --- [RMI TCP Connection(3)-172.16.6.50] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-12-08 10:19:35.775  INFO 23956 --- [NettyClientSelector_1] RocketmqRemoting                         : closeChannel: close the connection to remote address[180.76.100.50:10911] result: true
+2021-12-08 10:19:36.834  INFO 23956 --- [NettyClientSelector_1] RocketmqRemoting                         : closeChannel: close the connection to remote address[] result: true
+2021-12-08 10:19:37.868  INFO 23956 --- [NettyClientSelector_1] RocketmqRemoting                         : closeChannel: close the connection to remote address[] result: true
+2021-12-08 10:19:38.899  INFO 23956 --- [NettyClientSelector_1] RocketmqRemoting                         : closeChannel: close the connection to remote address[] result: true
+2021-12-08 10:19:38.965  INFO 23956 --- [NettyClientSelector_1] RocketmqRemoting                         : closeChannel: close the connection to remote address[180.76.100.50:9876] result: true
+2021-12-08 10:19:38.968  INFO 23956 --- [NettyClientSelector_1] RocketmqRemoting                         : closeChannel: close the connection to remote address[180.76.100.50:9876] result: true
+2021-12-08 10:19:43.430  INFO 23956 --- [NettyClientSelector_1] RocketmqRemoting                         : closeChannel: close the connection to remote address[180.76.100.50:9876] result: true
+2021-12-08 10:19:43.540  INFO 23956 --- [NettyClientSelector_1] RocketmqRemoting                         : closeChannel: close the connection to remote address[180.76.100.50:10911] result: true
+2021-12-08 10:19:44.067  INFO 23956 --- [SpringApplicationShutdownHook] a.r.s.s.DefaultRocketMQListenerContainer : container destroyed, DefaultRocketMQListenerContainer{consumerGroup='demo-consumer-simple', nameServer='rocketmq.utunan.com:9876', topic='TopicTest', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+2021-12-08 10:19:51.493  INFO 9064 --- [           main] com.utunan.RocketmqApplication           : Starting RocketmqApplication using Java 11.0.9 on DESKTOP-NAFNPCD with PID 9064 (E:\github\Technology\RocketMQ\rocketmq\target\classes started by Zero in E:\github\Technology\RocketMQ\rocketmq)
+2021-12-08 10:19:51.502  INFO 9064 --- [           main] com.utunan.RocketmqApplication           : No active profile set, falling back to default profiles: default
+2021-12-08 10:19:51.506  INFO 9064 --- [background-preinit] o.h.validator.internal.util.Version      : HV000001: Hibernate Validator 6.2.0.Final
+2021-12-08 10:19:52.889  INFO 9064 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-12-08 10:19:52.898  INFO 9064 --- [           main] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-8080"]
+2021-12-08 10:19:52.898  INFO 9064 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-08 10:19:52.899  INFO 9064 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.53]
+2021-12-08 10:19:53.035  INFO 9064 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-08 10:19:53.037  INFO 9064 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1471 ms
+2021-12-08 10:19:55.426  INFO 9064 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2021-12-08 10:19:57.029  INFO 9064 --- [           main] a.r.s.s.DefaultRocketMQListenerContainer : running container: DefaultRocketMQListenerContainer{consumerGroup='demo-consumer-simple', nameServer='rocketmq.utunan.com:9876', topic='TopicTest', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+2021-12-08 10:19:57.030  INFO 9064 --- [           main] o.a.r.s.a.ListenerContainerConfiguration : Register the listener to container, listenerBeanName:rocketMqSimpleReceiver, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_1
+2021-12-08 10:19:57.050  INFO 9064 --- [           main] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-8080"]
+2021-12-08 10:19:57.077  INFO 9064 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-08 10:19:57.108  INFO 9064 --- [           main] com.utunan.RocketmqApplication           : Started RocketmqApplication in 6.389 seconds (JVM running for 8.371)
+2021-12-08 10:19:58.520  INFO 9064 --- [RMI TCP Connection(3)-172.16.6.50] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-08 10:19:58.521  INFO 9064 --- [RMI TCP Connection(3)-172.16.6.50] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-12-08 10:19:58.522  INFO 9064 --- [RMI TCP Connection(3)-172.16.6.50] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-12-08 10:20:11.969  INFO 9064 --- [NettyClientSelector_1] RocketmqRemoting                         : closeChannel: close the connection to remote address[180.76.100.50:10911] result: true
+2021-12-08 10:20:13.009  INFO 9064 --- [NettyClientSelector_1] RocketmqRemoting                         : closeChannel: close the connection to remote address[180.76.100.50:10911] result: true
+2021-12-08 10:20:15.148  INFO 9064 --- [NettyClientSelector_1] RocketmqRemoting                         : closeChannel: close the connection to remote address[] result: true
+2021-12-08 10:20:16.146  INFO 9064 --- [NettyClientSelector_1] RocketmqRemoting                         : closeChannel: close the connection to remote address[180.76.100.50:10911] result: true
+2021-12-08 10:20:16.147  INFO 9064 --- [NettyClientSelector_1] RocketmqRemoting                         : closeChannel: close the connection to remote address[180.76.100.50:10911] result: true
+2021-12-08 10:20:16.172  INFO 9064 --- [NettyClientSelector_1] RocketmqRemoting                         : closeChannel: close the connection to remote address[180.76.100.50:10911] result: true
+2021-12-08 10:20:16.174  INFO 9064 --- [NettyClientSelector_1] RocketmqRemoting                         : closeChannel: close the connection to remote address[180.76.100.50:10911] result: true
+2021-12-08 10:20:16.176  INFO 9064 --- [NettyClientSelector_1] RocketmqRemoting                         : closeChannel: close the connection to remote address[180.76.100.50:9876] result: true
+2021-12-08 10:20:16.652  INFO 9064 --- [SpringApplicationShutdownHook] a.r.s.s.DefaultRocketMQListenerContainer : container destroyed, DefaultRocketMQListenerContainer{consumerGroup='demo-consumer-simple', nameServer='rocketmq.utunan.com:9876', topic='TopicTest', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+2021-12-08 10:20:16.666  INFO 9064 --- [NettyClientSelector_1] RocketmqRemoting                         : closeChannel: close the connection to remote address[180.76.100.50:10911] result: true
+2021-12-08 10:20:16.669  INFO 9064 --- [NettyClientSelector_1] RocketmqRemoting                         : closeChannel: close the connection to remote address[180.76.100.50:10911] result: true
+2021-12-08 10:20:16.737  INFO 9064 --- [NettyClientSelector_1] RocketmqRemoting                         : closeChannel: close the connection to remote address[180.76.100.50:10911] result: true
+2021-12-08 10:20:16.737  INFO 9064 --- [NettyClientSelector_1] RocketmqRemoting                         : closeChannel: close the connection to remote address[180.76.100.50:10911] result: true

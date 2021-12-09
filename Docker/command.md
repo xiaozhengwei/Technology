@@ -66,6 +66,6 @@ docker logs `containerid`
 
 ```shell
 # 进入docker容器
-docker exec -it `containerid` bash
+docker exec -it f4fa2bfbbfcf bash
 ```
 
