@@ -1,0 +1,54 @@
+2021-12-08 10:31:01.482 ERROR 22312 --- [           main] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@52:66 - no applicable action for [import], current ElementPath  is [[configuration][import]]
+ERROR in ch.qos.logback.core.joran.action.AppenderAction - Could not create an Appender of type [org.apache.rocketmq.logappender.logback.RocketmqLogbackAppender]. ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type org.apache.rocketmq.logappender.logback.RocketmqLogbackAppender
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@54:105 - ActionException in Action for tag [appender] ch.qos.logback.core.joran.spi.ActionException: ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type org.apache.rocketmq.logappender.logback.RocketmqLogbackAppender
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [mqAppender]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+ERROR in ch.qos.logback.classic.AsyncAppender[mqAsyncAppender] - No attached appenders found.
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@52:66 - no applicable action for [import], current ElementPath  is [[configuration][import]]
+ERROR in ch.qos.logback.core.joran.action.AppenderAction - Could not create an Appender of type [org.apache.rocketmq.logappender.logback.RocketmqLogbackAppender]. ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type org.apache.rocketmq.logappender.logback.RocketmqLogbackAppender
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@54:105 - ActionException in Action for tag [appender] ch.qos.logback.core.joran.spi.ActionException: ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type org.apache.rocketmq.logappender.logback.RocketmqLogbackAppender
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [mqAppender]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+ERROR in ch.qos.logback.classic.AsyncAppender[mqAsyncAppender] - No attached appenders found.
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:328)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:282)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:240)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:216)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:82)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:63)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:117)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:111)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:62)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:374)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:332)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at com.utunan.RocketmqApplication.main(RocketmqApplication.java:10)
+Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@52:66 - no applicable action for [import], current ElementPath  is [[configuration][import]]
+ERROR in ch.qos.logback.core.joran.action.AppenderAction - Could not create an Appender of type [org.apache.rocketmq.logappender.logback.RocketmqLogbackAppender]. ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type org.apache.rocketmq.logappender.logback.RocketmqLogbackAppender
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@54:105 - ActionException in Action for tag [appender] ch.qos.logback.core.joran.spi.ActionException: ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type org.apache.rocketmq.logappender.logback.RocketmqLogbackAppender
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [mqAppender]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+ERROR in ch.qos.logback.classic.AsyncAppender[mqAsyncAppender] - No attached appenders found.
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@52:66 - no applicable action for [import], current ElementPath  is [[configuration][import]]
+ERROR in ch.qos.logback.core.joran.action.AppenderAction - Could not create an Appender of type [org.apache.rocketmq.logappender.logback.RocketmqLogbackAppender]. ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type org.apache.rocketmq.logappender.logback.RocketmqLogbackAppender
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@54:105 - ActionException in Action for tag [appender] ch.qos.logback.core.joran.spi.ActionException: ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type org.apache.rocketmq.logappender.logback.RocketmqLogbackAppender
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [mqAppender]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+ERROR in ch.qos.logback.classic.AsyncAppender[mqAsyncAppender] - No attached appenders found.
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:179)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithSpecificConfig(AbstractLoggingSystem.java:66)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:57)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:132)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:316)
+	... 18 common frames omitted
+

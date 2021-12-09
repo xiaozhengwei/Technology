@@ -1,0 +1,7 @@
+```sql
+#创建用户名和密码都为canal
+CREATE USER canal IDENTIFIED BY 'canal';  
+GRANT SELECT, REPLICATION SLAVE, REPLICATION CLIENT ON *.* TO 'canal'@'%';
+FLUSH PRIVILEGES;
+```
+

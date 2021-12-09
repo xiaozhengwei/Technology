@@ -1,4 +1,4 @@
 rocketmq:
-  nameServer: 82.157.103.184:9876
+  nameServer: rocketmq.utunan.com:9876
   producer:
-    group: demo-group
+    group: demo-producter-simple
