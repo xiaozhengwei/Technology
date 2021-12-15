@@ -1,7 +1,14 @@
+import org.junit.jupiter.api.Test;
+
 import java.util.HashMap;
 import java.util.Map;
 
 public class Leetcode146 {
+
+    @Test
+    public void run(){
+
+    }
 
     public class LRUCache {
         class DLinkedNode {
