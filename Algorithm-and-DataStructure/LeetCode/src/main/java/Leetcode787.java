@@ -20,7 +20,7 @@ public class Leetcode787 {
                 }
             }
             dp[0][src] = 0;
-            for (int step = 1; step < k + 2; step++) {
+            for (int step = 1; step <= k + 1; step++) {
                 for (int[] flight : flights) {
                     int start = flight[0];
                     int end = flight[1];
@@ -28,7 +28,7 @@ public class Leetcode787 {
                     dp[step][end] = Math.min(dp[step][end], dp[step - 1][start] + price);
                 }
             }
-            for (int step = 1; step < k + 2; step++) {
+            for (int step = 1; step <= k + 1; step++) {
                 minPrice = Math.min(dp[step][dst], minPrice);
             }
             return minPrice == maxPrice ? -1 : minPrice;
