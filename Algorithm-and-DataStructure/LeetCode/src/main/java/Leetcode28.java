@@ -1,6 +1,13 @@
+import org.junit.jupiter.api.Test;
+
 import java.util.LinkedList;
 
 public class Leetcode28 {
+
+    @Test
+    public void run(){
+
+    }
 
     class Solution {
         public int strStr(String haystack, String needle) {
