@@ -1,6 +1,6 @@
 import org.junit.jupiter.api.Test;
 
-public class MaxProfit {
+public class Leetcode122 {
 
     @Test
     public void run() {
