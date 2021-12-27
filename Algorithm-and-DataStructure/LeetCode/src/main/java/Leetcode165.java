@@ -8,50 +8,31 @@ public class Leetcode165 {
     }
 
 
-    static class Solution {
-//        public int compareVersion(String version1, String version2) {
-//            String []v1s=version1.split("\\.");
-//            String []v2s=version2.split("\\.");
-//
-//            for(int i=0;i<v1s.length||i<v2s.length;i++){
-//                int x=0;
-//                int y=0;
-//                if(i<v1s.length){
-//                    x=Integer.parseInt(v1s[i]);
-//                }
-//                if(i<v2s.length){
-//                    y=Integer.parseInt(v2s[i]);
-//                }
-//                if(x<y){
-//                    return -1;
-//                }
-//                if(x>y){
-//                    return 1;
-//                }
-//            }
-//            return 0;
-//        }
-//    }
-
+    class Solution {
         public int compareVersion(String version1, String version2) {
-            int n = version1.length(), m = version2.length();
-            int i = 0, j = 0;
-            while (i < n || j < m) {
+            int v1Length = version1.length();
+            int v2Length = version2.length();
+
+            int v1 = 0;
+            int v2 = 0;
+            while (v1 < v1Length || v2 < v2Length) {
                 int x = 0;
-                for (; i < n && version1.charAt(i) != '.'; ++i) {
-                    x = x * 10 + version1.charAt(i) - '0';
+                for (; v1 < v1Length && version1.charAt(v1) != '.'; v1++) {
+                    x = 10 * x + version1.charAt(v1) - '0';
                 }
-                ++i; // 跳过点号
+                v1++;
                 int y = 0;
-                for (; j < m && version2.charAt(j) != '.'; ++j) {
-                    y = y * 10 + version2.charAt(j) - '0';
+                for (; v2 < v2Length && version2.charAt(v2) != '.'; v2++) {
+                    y = 10 * y + version2.charAt(v2) - '0';
                 }
-                ++j; // 跳过点号
+                v2++;
                 if (x != y) {
                     return x > y ? 1 : -1;
                 }
+
             }
             return 0;
+
         }
     }
 }
