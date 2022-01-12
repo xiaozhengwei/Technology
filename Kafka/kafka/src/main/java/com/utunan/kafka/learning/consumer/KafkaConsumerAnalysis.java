@@ -28,7 +28,7 @@ public class KafkaConsumerAnalysis {
         properties.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, brokerList);
         properties.put(ConsumerConfig.GROUP_ID_CONFIG, groupId);
         // 自动提交
-        //properties . put(ConsumerConfig.ENABLE_AUTO_COMMIT_CONFIG , false);
+        //properties.put(ConsumerConfig.ENABLE_AUTO_COMMIT_CONFIG, false);
         properties.put(ConsumerConfig.CLIENT_ID_CONFIG, clientId);
         return properties;
     }
@@ -53,7 +53,7 @@ public class KafkaConsumerAnalysis {
                     System.out.println("key =" + record.key() + ", value=" + record.value());
                 }
             }
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
 
