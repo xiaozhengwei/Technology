@@ -12,11 +12,13 @@ public class SendMessageController {
 
     private KafkaTemplate<String, Object> template;
 
-    
+
     @RequestMapping("test")
     public String sendTestMessage(String test) {
-        template.send("test", "test");
-        return "successful";
+        for (int i = 0; i < 100; i++) {
+            template.send("Test-Message", "Test-Message" + i);
+        }
+        return "sucessful";
     }
 
     @Autowired

@@ -1,4 +1,4 @@
-package com.utunan.kafka.learning;
+package com.utunan.kafka.learning.consumer;
 
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
@@ -16,7 +16,7 @@ import static java.lang.Thread.sleep;
 
 public class ConsumerFastStart {
 
-    public static final String brokerList = "kafka.utunan.com:9092";
+    public static final String brokerList = "kafka1:9092,kafka2:9092,kafka3:9092";
 
     public static final String topic = "topic-demo";
 

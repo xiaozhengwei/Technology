@@ -1,4 +1,4 @@
-package com.utunan.kafka.learning;
+package com.utunan.kafka.learning.producer;
 
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerConfig;
@@ -9,7 +9,7 @@ import java.util.Properties;
 
 public class ProducerFastStart {
 
-    public static final String brokerList = "kafka.utunan.com:9092";
+    public static final String brokerList = "kafka1:9092,kafka2:9092,kafka3:9092";
 
     public static final String topic = "topic-demo";
 
@@ -22,12 +22,16 @@ public class ProducerFastStart {
 
         KafkaProducer<String, String> producer = new KafkaProducer<String, String>(properties);
 
-        ProducerRecord<String, String> record = new ProducerRecord<>(topic, "Hello Kafka!");
 
-        try {
-            producer.send(record);
-        } catch (Exception e) {
-            e.printStackTrace();
+        int i = 0;
+        while (true) {
+            try {
+                ProducerRecord<String, String> record = new ProducerRecord<>(topic, "Hello Kafka!===" + i);
+                producer.send(record);
+            } catch (Exception e) {
+                e.printStackTrace();
+                break;
+            }
         }
 
         producer.close();

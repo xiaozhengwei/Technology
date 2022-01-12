@@ -1,6 +1,5 @@
 package com.utunan.kafka.learning.producer;
 
-import com.utunan.kafka.learning.interceptor.ProducerInterceptorPrefix;
 import org.apache.kafka.clients.producer.*;
 import org.apache.kafka.common.serialization.StringSerializer;
 
@@ -8,7 +7,7 @@ import java.util.Properties;
 import java.util.concurrent.Future;
 
 public class KafkaProducerAnalysis {
-    public static final String brokerList = "kafka.utunan.com:9092";
+    public static final String brokerList = "kafka1:9092,kafka2:9092,kafka3:9092";
 
     public static final String topic = "topic-demo";
 
