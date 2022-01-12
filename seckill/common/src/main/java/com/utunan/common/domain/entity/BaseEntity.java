@@ -32,6 +32,7 @@ public class BaseEntity implements Serializable {
     public Integer sign;
 
     public Long getCreateUser() {
+
         return createUser;
     }
 

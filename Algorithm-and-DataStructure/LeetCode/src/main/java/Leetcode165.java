@@ -7,7 +7,6 @@ public class Leetcode165 {
 
     }
 
-
     class Solution {
         public int compareVersion(String version1, String version2) {
             int v1Length = version1.length();
