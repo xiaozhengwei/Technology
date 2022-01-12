@@ -1,7 +1,6 @@
 spring:
   kafka:
-    bootstrap-servers: kafka.utunan.com:9092
-
+    bootstrap-servers: kafka1:9092,kafka2:9092,kafka3:9092
     producer:
       retries: 0
       batch-size: 16384
@@ -12,7 +11,6 @@ spring:
         linger.ms: 1
 
     consumer:
-      enable-auto-commit: false
       auto-commit-interval: 100ms
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
       value-deserializer: org.apache.kafka.common.serialization.StringDeserializer

@@ -48,7 +48,7 @@ public class QuickSort {
         int index = partition(array, left, right);
 
 
-        if (index > left) {
+        if (index > left) {   
             quickSort(array, left, index - 1);
         }
 

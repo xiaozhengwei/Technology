@@ -2,6 +2,9 @@
 
 ```
 nohup bin/zookeeper-server-start.sh config/zookeeper.properties > zookeeper.out &
+nohup bin/zookeeper-server-start.sh config/zookeeper1.properties > zookeeper1.out &
+nohup bin/zookeeper-server-start.sh config/zookeeper2.properties > zookeeper2.out &
+nohup bin/zookeeper-server-start.sh config/zookeeper3.properties > zookeeper3.out &
 ```
 
 

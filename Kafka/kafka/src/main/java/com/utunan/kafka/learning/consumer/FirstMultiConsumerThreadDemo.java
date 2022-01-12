@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.Properties;
 
 public class FirstMultiConsumerThreadDemo {
-    public static final String brokerList = "kafka.utunan.com:9092";
+    public static final String brokerList = "kafka1:9092,kafka2:9092,kafka3:9092";
     public static final String topic = "topic-demo";
     public static final String groupid = "group.demo";
 
