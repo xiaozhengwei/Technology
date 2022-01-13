@@ -1,18 +1,17 @@
 import org.junit.jupiter.api.Test;
 
-import java.util.HashMap;
 import java.util.HashSet;
-import java.util.Map;
 import java.util.Set;
 
 public class Leetcode3 {
+
     @Test
     public void run() {
-        Solution solution=new Solution();
-        solution.lengthOfLongestSubstring("au");
+
     }
 
     class Solution {
+
         public int lengthOfLongestSubstring(String s) {
             int sLength = s.length();
             if (sLength < 1) {
@@ -35,6 +34,7 @@ public class Leetcode3 {
             }
             return maxLength;
         }
+        
     }
 
 }

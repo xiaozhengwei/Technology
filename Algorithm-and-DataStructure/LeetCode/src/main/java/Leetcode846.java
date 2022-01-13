@@ -15,6 +15,7 @@ public class Leetcode846 {
             for (int i = 0; i < hand.length; i++) {
 
             }
+            return false;
         }
     }
 }
