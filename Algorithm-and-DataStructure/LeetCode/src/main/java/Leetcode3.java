@@ -34,7 +34,7 @@ public class Leetcode3 {
             }
             return maxLength;
         }
-        
+
     }
 
 }
