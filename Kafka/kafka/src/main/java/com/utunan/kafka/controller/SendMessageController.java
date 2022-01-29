@@ -25,7 +25,7 @@ public class SendMessageController {
     @RequestMapping("test")
     public void sendTestMessage(String test) throws IOException {
         BufferedReader fileReader = new BufferedReader(new FileReader(new File("D://picture.jpg")));
-        StringBuffer sb = new StringBuffer();
+        StringBuilder sb = new StringBuilder();
         String result;
         while ((result = fileReader.readLine()) != null) {
             sb.append(result);
@@ -40,7 +40,7 @@ public class SendMessageController {
 
                 @Override
                 public void onFailure(Throwable ex) {
-                    System.out.println("msg send failed: " + ex.getMessage());
+                    System.out.println("msg send failed ");
                 }
             });
         }

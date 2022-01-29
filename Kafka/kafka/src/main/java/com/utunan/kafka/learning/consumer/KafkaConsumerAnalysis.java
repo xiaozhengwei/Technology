@@ -13,7 +13,7 @@ import java.util.concurrent.atomic.AtomicBoolean;
 
 public class KafkaConsumerAnalysis {
 
-    public static final String brokerList = "kafka1:9092,kafka2:9092,kafka3:9092";
+    public static final String brokerList = "application1:9092,application2:9092,application3:9092";
     public static final String topic = "topic-demo";
     public static final String groupId = "group.demo";
     public static final String clientId = "group.demo";
