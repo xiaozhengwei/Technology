@@ -1,6 +1,12 @@
-import java.util.List;
+import org.junit.jupiter.api.Test;
 
 public class Leetcode19 {
+
+    @Test
+    public void run(){
+        Solution solution=new Solution();
+    }
+
 
     class Solution {
 

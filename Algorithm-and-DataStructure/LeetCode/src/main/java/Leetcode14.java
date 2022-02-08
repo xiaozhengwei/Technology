@@ -1,4 +1,10 @@
+import org.junit.jupiter.api.Test;
+
 public class Leetcode14 {
+    @Test
+    public void run(){
+        Solution solution=new Solution();
+    }
 
     class Solution {
 
