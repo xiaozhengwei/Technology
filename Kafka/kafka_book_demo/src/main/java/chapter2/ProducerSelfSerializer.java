@@ -13,7 +13,7 @@ import java.util.concurrent.ExecutionException;
  * Created by 朱小厮 on 2018/7/26.
  */
 public class ProducerSelfSerializer {
-    public static final String brokerList = "localhost:9092";
+    public static final String brokerList = "application1:9092,application2:9092,application3:9092";
     public static final String topic = "topic-demo";
 
     public static void main(String[] args)

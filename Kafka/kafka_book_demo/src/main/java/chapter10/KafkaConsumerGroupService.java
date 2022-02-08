@@ -169,7 +169,7 @@ public class KafkaConsumerGroupService {
     public static void main(String[] args) throws ExecutionException,
             InterruptedException {
         KafkaConsumerGroupService service =
-                new KafkaConsumerGroupService("localhost:9092");
+                new KafkaConsumerGroupService("application1:9092,application2:9092,application3:9092");
         service.init();
         List<PartitionAssignmentState> list =
                 service.collectGroupAssignment("groupIdMonitor");

@@ -13,7 +13,7 @@ import org.apache.spark.streaming.{Minutes, Seconds, StreamingContext}
   * demo: http://spark.apache.org/docs/2.3.1/streaming-kafka-0-10-integration.html
   */
 object KafkaWordCount {
-  private val brokers = "localhost:9092"
+  private val brokers = "application1:9092,application2:9092,application3:9092"
   private val topic = "topic-spark"
   private val group = "group-spark"
   private val checkpointDir = "/opt/kafka/checkpoint"

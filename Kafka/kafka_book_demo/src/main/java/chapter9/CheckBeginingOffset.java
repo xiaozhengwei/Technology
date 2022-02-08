@@ -30,7 +30,7 @@ public class CheckBeginingOffset {
 
     public static KafkaConsumer<String,String> createNewConsumer(){
         Properties props = new Properties();
-        props.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092");
+        props.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, "application1:9092,application2:9092,application3:9092");
         props.put(ConsumerConfig.GROUP_ID_CONFIG, "CheckBeginingOffset");
         props.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG,
                 StringDeserializer.class.getName());

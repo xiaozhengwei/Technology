@@ -13,7 +13,7 @@ import org.apache.spark.streaming.{Seconds, StreamingContext}
   * Created by 朱小厮 on 2019-03-04.
   */
 object StreamingWithKafka {
-  private val brokers = "localhost:9092"
+  private val brokers = "application1:9092,application2:9092,application3:9092"
   private val topic = "topic-spark"
   private val group = "group-spark"
   private val checkpointDir = "/opt/kafka/checkpoint"

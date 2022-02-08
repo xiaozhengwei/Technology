@@ -10,11 +10,11 @@ import java.util.concurrent.ExecutionException;
  * Created by 朱小厮 on 2018/7/21.
  */
 public class KafkaAdminTopicOperation {
-    public static final String brokerList = "localhost:9092";
+    public static final String brokerList = "application1:9092,application2:9092,application3:9092";
     public static final String topic = "topic-admin";
 
     public static void describeTopic(){
-        String brokerList =  "localhost:9092";
+        String brokerList =  "application1:9092,application2:9092,application3:9092";
         String topic = "topic-admin";
 
         Properties props = new Properties();
@@ -33,7 +33,7 @@ public class KafkaAdminTopicOperation {
     }
 
     public static void createTopic() {
-        String brokerList =  "localhost:9092";
+        String brokerList =  "application1:9092,application2:9092,application3:9092";
         String topic = "topic-admin";
 
         Properties props = new Properties();
@@ -67,7 +67,7 @@ public class KafkaAdminTopicOperation {
     }
 
     public static void deleteTopic(){
-        String brokerList =  "localhost:9092";
+        String brokerList =  "application1:9092,application2:9092,application3:9092";
         String topic = "topic-admin";
 
         Properties props = new Properties();

@@ -21,7 +21,7 @@ public class KafkaConsumerGroupAnother {
 
     public static void main(String[] args) throws IOException {
         String[] agrs = {"--describe", "--bootstrap-server",
-                "localhost:9092", "--group", "groupIdMonitor"};
+                "application1:9092,application2:9092,application3:9092", "--group", "groupIdMonitor"};
         ConsumerGroupCommand.ConsumerGroupCommandOptions options =
                 new ConsumerGroupCommand.ConsumerGroupCommandOptions(agrs);
         ConsumerGroupCommand.ConsumerGroupService kafkaConsumerGroupService =
