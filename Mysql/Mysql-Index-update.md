@@ -28,28 +28,28 @@ CREATE TABLE `t` (
   # 可以使用联合索引abc
   ```
 
-  ![image-20220211172722682](.\images\mysqlindex002.jpg)
+  ![image-20220211172722682](./images/mysqlindex002.jpg)
 
 - ```sql
   EXPLAIN SELECT * FROM T t where  t.b =1 and t.c=1 ;
   # 不可以使用联合索引abc
   ```
 
-  ![image-20220211172828335](.\images\mysqlindex003.jpg)
+  ![image-20220211172828335](./images/mysqlindex003.jpg)
 
 - ```sql
   EXPLAIN SELECT * FROM T t where  t.a =1 and t.c=1 ;
   # 可以使用联合索引abc
   ```
 
-  ![image-20220211172934875](.\images\mysqlindex004.jpg)
+  ![image-20220211172934875](./images/mysqlindex004.jpg)
 
 - ```sql
   EXPLAIN SELECT * FROM T t where  t.c=1 ;
   # 不可以使用联合索引abc
   ```
 
-  ![image-20220211173102563](.\images\mysqlindex005.jpg)
+  ![image-20220211173102563](./images/mysqlindex005.jpg)
 
 - ```sql
   EXPLAIN SELECT a,b,c FROM T t where  t.b =1 and t.c=1 ;
@@ -57,7 +57,7 @@ CREATE TABLE `t` (
   # 可以使用联合索引abc 【其实还是进行了全表扫描】
   ```
 
-  ![image-20220211173315516](.\images\mysqlindex006.jpg)
+  ![image-20220211173315516](./images/mysqlindex006.jpg)
 
 - ```sql
   EXPLAIN SELECT a,b,c FROM T t where  t.c=1 ;
@@ -66,7 +66,7 @@ CREATE TABLE `t` (
   # 可以使用联合索引abc 【其实还是进行了全表扫描】
   ```
 
-  ![image-20220211173519313](.\images\mysqlindex007.jpg)
+  ![image-20220211173519313](./images/mysqlindex007.jpg)
 
 ## 结论
 
