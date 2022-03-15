@@ -54,7 +54,7 @@ CREATE TABLE `t` (
 - ```sql
   EXPLAIN SELECT a,b,c FROM T t where  t.b =1 and t.c=1 ;
   EXPLAIN SELECT b,c FROM T t where  t.b =1 and t.c=1 ;
-  # 可以使用联合索引abc 【其实还是进行了全表扫描】
+  # 可以使用联合索引abc 【其实还是进行了全索引扫描】
   ```
 
   ![image-20220211173315516](./images/mysqlindex006.jpg)
@@ -63,7 +63,7 @@ CREATE TABLE `t` (
   EXPLAIN SELECT a,b,c FROM T t where  t.c=1 ;
   EXPLAIN SELECT b,c FROM T t where  t.c=1 ;
   EXPLAIN SELECT c FROM T t where  t.c=1 ;
-  # 可以使用联合索引abc 【其实还是进行了全表扫描】
+  # 可以使用联合索引abc 【其实还是进行了全索引扫描】
   ```
 
   ![image-20220211173519313](./images/mysqlindex007.jpg)
@@ -71,6 +71,6 @@ CREATE TABLE `t` (
 ## 结论
 
 ```
-表t，含有id,a,b,c,d字段，id为主键，abc联合索引，当where条件仅有b,c的时候，根据返回字段决定要不要使用索引【使用了索引，但是还是进行了全表扫描】，如果select查询出来的字段，是abc中的任意字段，则会使用索引，如果有其他字段，那么不会使用索引。
+表t，含有id,a,b,c,d字段，id为主键，abc联合索引，当where条件仅有b,c的时候，根据返回字段决定要不要使用索引【使用了索引，但是还是进行了全索引扫描】，如果select查询出来的字段，是abc中的任意字段，则会使用索引，如果有其他字段，那么不会使用索引。
 ```
 

@@ -15,7 +15,7 @@ import java.util.List;
 public class SyncConsumer {
     public static void main(String[] args) throws MQClientException {
         DefaultMQPushConsumer consumer = new DefaultMQPushConsumer("SyncConsumer");
-        consumer.setNamesrvAddr("180.76.100.50:9876");
+        consumer.setNamesrvAddr("127.0.0.1:9876");
         consumer.subscribe("SyncTopic", "*");
 
         consumer.registerMessageListener(new MessageListenerConcurrently() {

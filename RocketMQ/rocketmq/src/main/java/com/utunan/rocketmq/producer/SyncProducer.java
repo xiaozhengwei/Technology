@@ -15,7 +15,7 @@ public class SyncProducer {
         DefaultMQProducer producer = new
                 DefaultMQProducer("SyncProducer");
         // Specify name server addresses.
-        producer.setNamesrvAddr("180.76.100.50:9876");
+        producer.setNamesrvAddr("127.0.0.1:9876");
         producer.start();
         for (int i = 0; i < 100; i++) {
             Message message = new Message("SyncTopic", "TAG1", "KEY1", ("Hello" + i).getBytes(StandardCharsets.UTF_8));

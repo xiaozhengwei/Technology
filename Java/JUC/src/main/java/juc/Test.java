@@ -10,8 +10,11 @@ public class Test {
 //        System.out.println(1<<30);
 //        System.out.println(1<<31);
 //        System.out.println(0x7fffffff);
-        System.out.println(10^5);
-        System.out.println(10^7);
+//        System.out.println(10^5);
+//        System.out.println(10^7);
+        while(true){
+            new Thread().start();
+        }
     }
 
 }

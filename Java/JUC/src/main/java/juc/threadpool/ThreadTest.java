@@ -9,7 +9,9 @@ public class ThreadTest {
 
         @Override
         public void run() {
+            String str=new String("123123");
             System.out.println("执行啦~~");
+
         }
     }
 
