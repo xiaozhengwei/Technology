@@ -1,4 +1,11 @@
+import org.junit.jupiter.api.Test;
+
 public class Leetcode121 {
+
+    @Test
+    public void run(){
+
+    }
 
     public int maxProfit(int[] prices) {
         int minPrice = Integer.MAX_VALUE;

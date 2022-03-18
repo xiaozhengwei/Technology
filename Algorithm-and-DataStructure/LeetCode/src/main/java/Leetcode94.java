@@ -1,7 +1,14 @@
+import org.junit.jupiter.api.Test;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class Leetcode94 {
+
+    @Test
+    public void run() {
+
+    }
 
     class Solution {
         public List<Integer> inorderTraversal(TreeNode root) {
