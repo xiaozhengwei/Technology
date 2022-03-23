@@ -1,5 +1,7 @@
 package quicksort;
 
+import java.util.Arrays;
+
 public class QuickSort {
 
     /**
@@ -18,8 +20,8 @@ public class QuickSort {
                 index++;
                 swap(array, i, index);
             }
-
         }
+
         if (index != left) {
             array[left] = array[index];
             array[index] = num;
@@ -47,8 +49,8 @@ public class QuickSort {
 
         int index = partition(array, left, right);
 
-
-        if (index > left) {   
+        Arrays.sort(array);
+        if (index > left) {
             quickSort(array, left, index - 1);
         }
 
