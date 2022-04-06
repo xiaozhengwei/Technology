@@ -6,12 +6,11 @@ import java.util.Map;
 public class Leetcode76 {
 
     @Test
-    public void run() {
+    public void run(){
 
     }
 
     class Solution {
-
         public String minWindow(String s, String t) {
             int sLen = s.length();
             int tLen = t.length();
