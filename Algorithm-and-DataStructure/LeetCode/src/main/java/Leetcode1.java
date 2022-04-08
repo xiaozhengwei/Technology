@@ -2,6 +2,9 @@ import org.junit.jupiter.api.Test;
 
 import java.util.HashMap;
 
+/**
+ * 两数之和
+ */
 public class Leetcode1 {
 
     @Test

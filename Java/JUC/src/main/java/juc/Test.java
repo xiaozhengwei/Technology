@@ -5,16 +5,15 @@ public class Test {
 
     public static void main(String[] args) throws ClassNotFoundException {
 
-//        System.out.println(1<<16);
-//
-//        System.out.println(1<<30);
-//        System.out.println(1<<31);
-//        System.out.println(0x7fffffff);
-//        System.out.println(10^5);
-//        System.out.println(10^7);
-        while(true){
-            new Thread().start();
-        }
+        Thread thread=new Thread(()->{
+                int i=0;
+                while(true){
+                    System.out.println(i++);
+                }
+            });
+            thread.start();
+            thread.interrupt();
+
     }
 
 }
