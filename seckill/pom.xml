@@ -18,7 +18,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <druid-spring-boot-starter.version>1.2.4</druid-spring-boot-starter.version>
-        <fastjson.version>1.2.75</fastjson.version>
+        <fastjson.version>1.2.83</fastjson.version>
         <jakarta.validation-api.version>2.0.2</jakarta.validation-api.version>
         <jedis.version>3.3.0</jedis.version>
         <jsonwebtoken.version>0.11.2</jsonwebtoken.version>
